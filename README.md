@@ -42,6 +42,7 @@ de forma ininterrumpida todos los dias y horas.
 
 ### Acceso al chat
 Para acceder al chat hay que hacer click en el enlace de la APK Generada.
+
 ![image](https://user-images.githubusercontent.com/23488888/88669154-265e8300-d0a9-11ea-9702-469936060209.png)
 
 
