@@ -43,24 +43,116 @@ Abierto las 24 horas del día todos los días. Internet y la totalidad de sus ap
 los días. 
 
 ## Código
-### Se comenzó por crear la base de datos y crear reglas para que los usuarios puedan escribir y leer
-![propiedades](https://user-images.githubusercontent.com/38388351/88716261-6ee76200-d0e4-11ea-8f62-514054ccb1aa.png)
+**Se comenzó por crear la base de datos y crear reglas para que los usuarios puedan escribir y leer**
+android.enableJetifier=true
+android.useAndroidX=true
+
 ![reglas](https://user-images.githubusercontent.com/38388351/88716263-6ee76200-d0e4-11ea-81e4-f185dc8a07f8.png)
 ![mail](https://user-images.githubusercontent.com/38388351/88716318-86bee600-d0e4-11ea-88f9-46e3e77a56d5.PNG)
-![Autenticacion](https://user-images.githubusercontent.com/38388351/88716150-41021d80-d0e4-11ea-8a19-79671f299576.PNG)
+
+@Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+        mSharedPreferences = PreferenceManager.getDefaultSharedPreferences(this);
+        // Set default username is anonymous.
+        mUsername = ANONYMOUS;
+
+        //Autentica si está este usuario en mi Firebase
+        mFirebaseAuth = FirebaseAuth.getInstance();
+        mFirebaseUser = mFirebaseAuth.getCurrentUser();
+        if (mFirebaseUser == null) {
+            // Not signed in, launch the Sign In activity
+            startActivity(new Intent(this, SignInActivity.class));
+            finish();
+            return;
+        } else {
+            mUsername = mFirebaseUser.getDisplayName();
+            if (mFirebaseUser.getPhotoUrl() != null) {
+                mPhotoUrl = mFirebaseUser.getPhotoUrl().toString();
+            }
+        }
+
+        GoogleSignInOptions gso = new GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
+                .requestIdToken(getString(R.string.default_web_client_id))
+                .requestEmail()
+                .build();
+        mSignInClient = GoogleSignIn.getClient(this, gso);
 
 
-### Instanciamos las variables de la base de datos y de nuestro frame
 
-![intanciacionxD](https://user-images.githubusercontent.com/38388351/88716584-def5e800-d0e4-11ea-91a3-f09873666ea4.PNG)
+**Instanciamos las variables de la base de datos y de nuestro frame**
+
+   public static class MessageViewHolder extends RecyclerView.ViewHolder {
+        TextView messageTextView;
+        ImageView messageImageView;
+        TextView messengerTextView;
+        CircleImageView messengerImageView;
+
+        public MessageViewHolder(View v) {
+            super(v);
+            messageTextView = (TextView) itemView.findViewById(R.id.messageTextView);
+            messageImageView = (ImageView) itemView.findViewById(R.id.messageImageView);
+            messengerTextView = (TextView) itemView.findViewById(R.id.messengerTextView);
+            messengerImageView = (CircleImageView) itemView.findViewById(R.id.messengerImageView);
+        }
+
+    }
+
+    // Firebase variables
+    private FirebaseAuth mFirebaseAuth;
+    private FirebaseUser mFirebaseUser;
+    private DatabaseReference mFirebaseDatabaseReference;
+    private FirebaseRecyclerAdapter<ChatMessenger, MessageViewHolder>
+            mFirebaseAdapter;
+
+    private static final String TAG = "MainActivity";
+    public static final String MESSAGES_CHILD = "messages";
+    private static final int REQUEST_INVITE = 1;
+    private static final int REQUEST_IMAGE = 2;
+    private static final String LOADING_IMAGE_URL = "https://www.google.com/images/spin-32.gif";
+    public static final int DEFAULT_MSG_LENGTH_LIMIT = 10;
+    public static final String ANONYMOUS = "anonymous";
+    private static final String MESSAGE_SENT_EVENT = "message_sent";
+
             
-### Un activityClass.java, para el registro 
+**Un activityClass.java, para el registro**
 
 ![SingIn](https://user-images.githubusercontent.com/38388351/88716752-254b4700-d0e5-11ea-80d0-e0f5430cc9ea.PNG)
 
 ## Un activityClass.java para el chat
 
-![chatMsm](https://user-images.githubusercontent.com/38388351/88716982-76f3d180-d0e5-11ea-8a14-2b585a746b51.PNG)
+package com.google.firebase.codelab.friendlychat;
+public class ChatMessenger {
+
+    private String id;
+    private String text;
+    private String name;
+    private String photoUrl;
+    private String imageUrl;
+
+    public ChatMessenger(){}
+
+    public ChatMessenger(String text, String name, String photoUrl, String imageUrl) {
+        this.text = text;
+        this.name = name;
+        this.photoUrl = photoUrl;
+        this.imageUrl = imageUrl;
+    }
+
+    public String getId() {return id;}
+    public void setId(String id) {this.id = id;}
+    public void setText(String text) {this.text = text;}
+    public String getName() {return name;}
+    public void setName(String name) {this.name = name;}
+    public String getPhotoUrl() {return photoUrl;}
+    public String getText() {return text;}
+    public void setPhotoUrl(String photoUrl) {this.photoUrl = photoUrl;}
+    public String getImageUrl() {return imageUrl;}
+    public void setImageUrl(String imageUrl) {this.imageUrl = imageUrl;}
+
+}
+
 
 ## Manual de uso
 ### Introducción
@@ -107,11 +199,9 @@ Por detrás luce así:
 
 
 
-
-
 **Refrencias:**\
 
-*Manual de creación de chat:* https://codelabs.developers.google.com/codelabs/firebase-android/#0
+*Manual de creación de chat:* https://codelabs.developers.google.com/codelabs/firebase-android/#0\
 *código base:* https://github.com/firebase/codelab-friendlychat-android
 
 *Tutorial en Youtube:* https://www.youtube.com/watch?v=xxXcxyDDIcU&feature=youtu.be
