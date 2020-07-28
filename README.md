@@ -35,15 +35,45 @@ Todas los mensajes quedan registrados para verlos posteriormente, y pueden poner
 Abierto las 24 horas del día todos los días. Internet y la totalidad de sus aplicaciones están disponibles las 24 horas del día todos 
 los días. 
 
+## Código
+
+
 ## Manual de uso
 ### Introducción
 El chat se configura como una herramienta importante para que el usuario pueda contactarse. El horario de atención del chat se establece 
 de forma ininterrumpida todos los dias y horas.
 
 ### Acceso al chat
-Para acceder al chat hay que hacer click en el enlace de la APK Generada.
+1. Para acceder al chat hay que hacer click en el enlace de la APK Generada.
 
 ![image](https://user-images.githubusercontent.com/23488888/88669154-265e8300-d0a9-11ea-9702-469936060209.png)
+
+2. Una vez en el enlace  tenemos que identificarnos como usuario, poniendo nuestro nombre y contraseña.
+
+![image](https://user-images.githubusercontent.com/23488888/88670360-94f01080-d0aa-11ea-93ca-f4e064d31cce.png)
+
+![image](https://user-images.githubusercontent.com/23488888/88670682-fa440180-d0aa-11ea-9ff3-e6951f7faf94.png)
+
+Los campos del formulario son los siguientes, empezando desde arriba:
+Email Address o Dirección de Correo Electrónico: Pondremos una dirección de correo válida.
+Password  o Contraseña: Introducimos una contraseña (si es segura mejor) para poder acceder a la aplicación.
+
+Para terminar con el registro pulsamos el botón azul “Register”
+
+3. Cuando ya nos hemos registrado iniciara el chat y nos aparecerá la ventana de conversación, donde podremos contestar el chat en 
+cuestión. En el margen derecho a al final de la ventana veremos un boton de enviar.
+
+![image](https://user-images.githubusercontent.com/23488888/88671313-c5847a00-d0ab-11ea-94a3-99c6ad9f22b5.png)
+
+
+4. Y tambien podemos visualizar los chat creados ultimamente o dode se quedo la conversacion y se puede continuar
+
+![image](https://user-images.githubusercontent.com/23488888/88671556-0d0b0600-d0ac-11ea-848e-6507804b373a.png)
+
+
+
+
+
 
 
   
