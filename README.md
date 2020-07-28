@@ -43,129 +43,30 @@ Abierto las 24 horas del día todos los días. Internet y la totalidad de sus ap
 los días. 
 
 ## Código
-### Se utilizaron las siguientes librerias para el funcionamiento del la aplicación de chat
+### Se comenzó por crear la base de datos y crear reglas para que los usuarios puedan escribir y leer
+![propiedades](https://user-images.githubusercontent.com/38388351/88716261-6ee76200-d0e4-11ea-8f62-514054ccb1aa.png)
+![reglas](https://user-images.githubusercontent.com/38388351/88716263-6ee76200-d0e4-11ea-81e4-f185dc8a07f8.png)
+![mail](https://user-images.githubusercontent.com/38388351/88716318-86bee600-d0e4-11ea-88f9-46e3e77a56d5.PNG)
+![Autenticacion](https://user-images.githubusercontent.com/38388351/88716150-41021d80-d0e4-11ea-8a19-79671f299576.PNG)
 
-import android.content.Intent;
-import android.content.SharedPreferences;
-import android.net.Uri;
-import android.os.Bundle;
-import android.preference.PreferenceManager;
-import android.text.Editable;
-import android.text.TextWatcher;
-import android.util.Log;
-import android.view.LayoutInflater;
-import android.view.Menu;
-import android.view.MenuInflater;
-import android.view.MenuItem;
-import android.view.View;
-import android.view.ViewGroup;
-import android.widget.Button;
-import android.widget.EditText;
-import android.widget.ImageView;
-import android.widget.ProgressBar;
-import android.widget.TextView;
-import android.widget.Toast;
 
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.content.ContextCompat;
-import androidx.recyclerview.widget.LinearLayoutManager;
-import androidx.recyclerview.widget.RecyclerView;
+### Instanciamos las variables de la base de datos y de nuestro frame
 
-import com.bumptech.glide.Glide;
-import com.firebase.ui.database.FirebaseRecyclerAdapter;
-import com.firebase.ui.database.FirebaseRecyclerOptions;
-import com.firebase.ui.database.SnapshotParser;
-import com.google.android.gms.auth.api.signin.GoogleSignIn;
-import com.google.android.gms.auth.api.signin.GoogleSignInClient;
-import com.google.android.gms.auth.api.signin.GoogleSignInOptions;
-import com.google.android.gms.tasks.OnCompleteListener;
-import com.google.android.gms.tasks.Task;
-import com.google.firebase.auth.FirebaseAuth;
-import com.google.firebase.auth.FirebaseUser;
-import com.google.firebase.database.DataSnapshot;
-import com.google.firebase.database.DatabaseError;
-import com.google.firebase.database.DatabaseReference;
-import com.google.firebase.database.FirebaseDatabase;
-import com.google.firebase.storage.FirebaseStorage;
-import com.google.firebase.storage.StorageReference;
-import com.google.firebase.storage.UploadTask;
-
-import de.hdodenhof.circleimageview.CircleImageView;
-
-### Instanciamos las variables de la base de datos
-
-    private FirebaseAuth mFirebaseAuth;
-    private FirebaseUser mFirebaseUser;
-    private DatabaseReference mFirebaseDatabaseReference;
-    private FirebaseRecyclerAdapter<FriendlyMessage, MessageViewHolder>
-            mFirebaseAdapter;
+![intanciacionxD](https://user-images.githubusercontent.com/38388351/88716584-def5e800-d0e4-11ea-91a3-f09873666ea4.PNG)
             
-### Un java.class y se agrega los campos que se pediran en el registro
+### Un activityClass.java, para el registro 
 
-public class FriendlyMessage {
+![SingIn](https://user-images.githubusercontent.com/38388351/88716752-254b4700-d0e5-11ea-80d0-e0f5430cc9ea.PNG)
 
-    private String id;
-    private String text;
-    private String name;
-    private String photoUrl;
-    private String imageUrl;
+## Un activityClass.java para el chat
 
-    public FriendlyMessage() {
-    }
-
-    public FriendlyMessage(String text, String name, String photoUrl, String imageUrl) {
-        this.text = text;
-        this.name = name;
-        this.photoUrl = photoUrl;
-        this.imageUrl = imageUrl;
-    }
-
-    public String getId() {
-        return id;
-    }
-
-    public void setId(String id) {
-        this.id = id;
-    }
-
-    public void setText(String text) {
-        this.text = text;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public String getPhotoUrl() {
-        return photoUrl;
-    }
-
-    public String getText() {
-        return text;
-    }
-
-    public void setPhotoUrl(String photoUrl) {
-        this.photoUrl = photoUrl;
-    }
-
-    public String getImageUrl() {
-        return imageUrl;
-    }
-
-    public void setImageUrl(String imageUrl) {
-        this.imageUrl = imageUrl;
-    }
-}
+![chatMsm](https://user-images.githubusercontent.com/38388351/88716982-76f3d180-d0e5-11ea-8a14-2b585a746b51.PNG)
 
 ## Manual de uso
 ### Introducción
-El chat se configura como una herramienta importante para que el usuario pueda contactarse. El horario de atención del chat se establece 
-de forma ininterrumpida todos los dias y horas.
+El chat se configura como una herramienta importante para que el usuario pueda contactarse. Se sobrelapa al mainActivity y permite que otros usuarios en tiempo real 
+intermcabien mensajes, e imágenes. El horario de atención del chat se establece de forma ininterrumpida todos los dias y horas.
+Cabe señalar que para la autenticación deberán registrarse por medio de Google.
 
 ### Acceso al chat
 1. Para acceder al chat hay que hacer click en el enlace de la APK Generada.
@@ -184,11 +85,16 @@ Password  o Contraseña: Introducimos una contraseña (si es segura mejor) para 
 
 Para terminar con el registro pulsamos el botón azul “Register”
 
+![Login2](https://user-images.githubusercontent.com/38388351/88717353-09947080-d0e6-11ea-833c-05b0f7ce15bf.PNG)
+
 3. Cuando ya nos hemos registrado iniciara el chat y nos aparecerá la ventana de conversación, donde podremos contestar el chat en 
 cuestión. En el margen derecho a al final de la ventana veremos un boton de enviar.
 
 ![image](https://user-images.githubusercontent.com/23488888/88671313-c5847a00-d0ab-11ea-94a3-99c6ad9f22b5.png)
 
+Por detrás luce así:
+
+![metodosSesion](https://user-images.githubusercontent.com/38388351/88717556-511afc80-d0e6-11ea-996b-c53089f20a0e.PNG)
 
 4. Y tambien podemos visualizar los chat creados ultimamente o dode se quedo la conversacion y se puede continuar
 
