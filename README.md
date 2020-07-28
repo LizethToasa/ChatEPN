@@ -163,7 +163,7 @@ de forma ininterrumpida todos los dias y horas.
 ### Acceso al chat
 1. Para acceder al chat hay que hacer click en el enlace de la APK Generada.
 
-![image](https://user-images.githubusercontent.com/23488888/88669154-265e8300-d0a9-11ea-9702-469936060209.png)
+![image](https://user-images.githubusercontent.com/23488888/88690871-bdcfd000-d0c1-11ea-8931-5338b0dd224e.png)
 
 2. Una vez en el enlace  tenemos que identificarnos como usuario, poniendo nuestro nombre y contraseña.
 
