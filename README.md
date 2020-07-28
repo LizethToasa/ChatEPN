@@ -201,7 +201,8 @@ Por detrás luce así:
 
 **Refrencias:**\
 
-*Manual de creación de chat:* https://codelabs.developers.google.com/codelabs/firebase-android/#0\
+*Manual de creación de chat:* https://codelabs.developers.google.com/codelabs/firebase-android/#0 
+
 *código base:* https://github.com/firebase/codelab-friendlychat-android
 
 *Tutorial en Youtube:* https://www.youtube.com/watch?v=xxXcxyDDIcU&feature=youtu.be
