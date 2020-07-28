@@ -170,11 +170,11 @@ de forma ininterrumpida todos los dias y horas.
 ### Acceso al chat
 1. Para acceder al chat hay que hacer click en el enlace de la APK Generada.
 
-![image](https://user-images.githubusercontent.com/23488888/88690871-bdcfd000-d0c1-11ea-8931-5338b0dd224e.png)
+![2](https://user-images.githubusercontent.com/38388351/88714036-d223c500-d0e1-11ea-9bc3-65046d3f0427.PNG)
 
 2. Una vez en el enlace  tenemos que identificarnos como usuario, poniendo nuestro nombre y contraseña.
 
-![image](https://user-images.githubusercontent.com/23488888/88670360-94f01080-d0aa-11ea-93ca-f4e064d31cce.png)
+![Login](https://user-images.githubusercontent.com/38388351/88714169-0303fa00-d0e2-11ea-9fc8-abd8f65e0493.PNG)
 
 ![image](https://user-images.githubusercontent.com/23488888/88670682-fa440180-d0aa-11ea-9ff3-e6951f7faf94.png)
 
@@ -192,7 +192,13 @@ cuestión. En el margen derecho a al final de la ventana veremos un boton de env
 
 4. Y tambien podemos visualizar los chat creados ultimamente o dode se quedo la conversacion y se puede continuar
 
-![image](https://user-images.githubusercontent.com/23488888/88671556-0d0b0600-d0ac-11ea-848e-6507804b373a.png)
+![chat1](https://user-images.githubusercontent.com/38388351/88714275-2f1f7b00-d0e2-11ea-9b0c-e9e859e24c35.PNG)
+
+5. Aplicamos estilos, cambiando de icono y colores en nuestra aplicación:
+![Icono](https://user-images.githubusercontent.com/38388351/88713356-caafec00-d0e0-11ea-9528-724791d764a0.PNG)
+![Paletta](https://user-images.githubusercontent.com/38388351/88713501-03e85c00-d0e1-11ea-8ad3-13dfa48b8c03.PNG)
+![SlpashScreen](https://user-images.githubusercontent.com/38388351/88713788-6fcac480-d0e1-11ea-98bf-712d83e484e1.png)
+
 
 
 
