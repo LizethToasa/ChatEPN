@@ -25,15 +25,25 @@ Se desarrollo en el entorno de desarrollo integrado (IDE) oficial para el desarr
 para probar la aplicacion de chat los cuales son el emulador de bluestack, teléfono celular, y una tablet.
 
 ## Características
-Mensajes instantáneos - Permite una interacción fluida mediante texto.
-Imágenes – Permite compartir imágenes.
-Discusión – Se puede utilizar en lugar del teléfono para hablar.
-Capacidad móvil – Se permite enviar mensajes instantáneos desde emuladores, dispositivos moviles como el teléfono celular.
-Registro – Al tener que registrarse para poder utilizar la aplicacion.
+Mensajes instantáneos: Permite una interacción fluida mediante texto.
+Imágenes: Permite compartir imágenes.
+Discusión: Se puede utilizar en lugar del teléfono para hablar.
+Capacidad móvil: Se permite enviar mensajes instantáneos desde emuladores, dispositivos moviles como el teléfono celular.
+Registro: Al tener que registrarse para poder utilizar la aplicacion.
 APK funcional.
 Todas los mensajes quedan registrados para verlos posteriormente, y pueden ponerse a disposición del usuario.
 Abierto las 24 horas del día todos los días. Internet y la totalidad de sus aplicaciones están disponibles las 24 horas del día todos 
 los días. 
+
+## Manual de uso
+### Introducción
+El chat se configura como una herramienta importante para que el usuario pueda contactarse. El horario de atención del chat se establece 
+de forma ininterrumpida todos los dias y horas.
+
+### Acceso al chat
+Para acceder al chat hay que hacer click en el enlace de la APK Generada.
+
+
   
 
 
