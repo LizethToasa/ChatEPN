@@ -1,5 +1,5 @@
 # ChatEPN
-**Asignatura:** Tópicos Especiales
+**Asignatura:** Tópicos Especiales\
 **Facultad:** ESFOT\
 **Integrantes:**\
 * Lizeth Toasa
