@@ -1,7 +1,7 @@
 # ChatEPN
 **Asignatura:** Tópicos Especiales\
 **Facultad:** ESFOT\
-**Integrantes:**\
+**Integrantes:**
 * Lizeth Toasa
 * Alberto Heredia
 * Jhonathan Pizarra
