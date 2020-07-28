@@ -155,6 +155,21 @@ public class FriendlyMessage {
     }
 }
 
+### Configuracion del icono de la app
+
+![image](https://user-images.githubusercontent.com/23488888/88691297-4e0e1500-d0c2-11ea-9baf-f5a4eeac6f74.png)
+
+### Apariencia de la app(colores)
+
+![image](https://user-images.githubusercontent.com/23488888/88691551-99c0be80-d0c2-11ea-9651-fc8cd040d0f8.png)
+
+![image](https://user-images.githubusercontent.com/23488888/88691757-e0aeb400-d0c2-11ea-9df4-71bd2d6e3ac2.png)
+
+### Vista de aplicacion
+
+![image](https://user-images.githubusercontent.com/23488888/88691868-03d96380-d0c3-11ea-84aa-2dc1b8d06c95.png)
+
+
 ## Manual de uso
 ### Introducción
 El chat se configura como una herramienta importante para que el usuario pueda contactarse. El horario de atención del chat se establece 
